@@ -16,6 +16,7 @@ import RegisterForm from "./component/auth/RegisterForm";
 
 function App() {
   return (
+    <>
     <Router>
       <Routes>
         <Route exact path="/" element={<Navigate replace to="/login" />}></Route>
@@ -23,6 +24,7 @@ function App() {
         <Route exact path="/register" element={<RegisterForm />}></Route>
       </Routes>
     </Router>
+    </>
   );
 }
 
